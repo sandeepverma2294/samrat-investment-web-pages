@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+  body{
+    position:absolute;
+    white-space: nowrap;
+    overflow: scroll;
+  }
+  .lang{
+    height:30px;
+    width:60px;
+    background-color:white;
+    border-width:0px;
+    text-align: right;
+  }
+  .lang:hover{
+    cursor:pointer;
+  }
+  .divm{
+    padding-left:18%;
+    padding-right:18%;
+  }
+  .bdw{
+    height:22px;
+    margin-left:47px;
+  }
+  .lbw{
+    width:430px;
+    float: left;
+  }
+  .fnh{
+    height:20px;
+  }
+  .pnh{
+    height:20px;
+  }
+  .emh{
+    height:20px;
+    margin-left:47px;
+  }
+  .adh{
+    height:20px;
+  }
+  .panh{
+    height:20px;
+    margin-left:47px;
+  }
+  .transc{
+    background-color:white;
+    border-width:0px;
+  }
+  .sam2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    height:40px;
+  }
+  .sam3{
+    display:grid;
+    height: 40px;
+    grid-template-columns:84% 8% 8%;
+  }
+  .opnw{
+    width:250px;
+    height:40px;
+    background-color: rgb(175,85,85);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .opnw:hover{
+    cursor:pointer;
+    background-color:rgb(67,67,33);
+  }
+  .sen{
+    background-color: rgb(175,85,85);
+    font-weight: bold;
+  }
+  .sen:hover{
+    cursor:pointer;
+    background-color:rgb(67,67,33);
+  }
+  .acval{
+    height:30px;
+    width:150px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: lightblue;
+  }
+  .acval:hover{
+    cursor:pointer;
+    background-color: rgb(0,204,204);
+  }
+  .fin{
+    height:30px;
+    width:180px;
+    background-color: white;
+    border-width: 0px;
+  }
+  .fin:hover{
+    cursor:pointer;
+    background-color: rgb(180,180,103);
+  }
+  .ser{
+    background-color: white;
+    border-width: 0px;
+    background-color: rgb(64,64,255);
+    color: white;
+  }
+  .ser:hover{
+    cursor:pointer;
+    text-decoration: underline;
+  }
+  .ser2{
+    background-color: white;
+    border-width: 0px;
+    text-decoration: underline;
+    background-color: rgb(64,64,255);
+    color: white;
+  }
+  .ser2:hover{
+    cursor:pointer;
+  }
+  .imgb{
+    border-radius:20%;
+  }
+  .imgb:hover{
+    cursor:pointer;
+  }
+
+  </style>
+  <body>
+    <form name="samrat" action="samrat.html" method="post">
+    <div>
+      <div>
+        <table>
+          <tr>
+            <td><img src="samrat logo.png"><td>
+            <td width=100%>
+              <input type="button" value="Investement Management" class="fin" style="margin-left:60px">
+              <input type="button" value="Consultancy" class="fin">
+              <input type="button" value="Saving" class="fin">
+              <input type="button" value="Funding" class="fin">
+              <input type="button" value="Open Account" class="acval" style="float:right">
+              <input type="button" value="Support" class="acval" style="float:right" onclick="opensup()"><br>
+              <hr style="margin-top:5px; margin-bottom:5px">
+              <input type="button" value="Insight" class="fin" style="margin-left:60px">
+              <input type="button" value="Global Service" class="fin">
+              <input type="button" value="Finance Service" class="fin">
+              <input type="button" value="Pay Here" class="fin">
+              <input type="button" value="Financial Palnning" class="acval" style="float:right">
+              <input type="button" value="Live Value 27%" class="acval" style="float:right">
+            </td>
+      </tr>
+    </table><br>
+      </div>
+
+      <div class="divm" style="background-color:red">
+            <br><center><h1><u style="color:white">WELCOME TO SAMRAT INVESTMENT</u></h1><br></center>
+<font size=5><font size=6 style="color:white"><b>Hello,</b></font><br>
+            <font size=6><b>Y</b></font><font size=5>ou are about to start your journey of most profitable savings ever, with essence of <br>
+                                      <span style=>human experience and innovation.</span></font><br><br>
+            <font size=6 style="color:white"><b>नमस्कार,</b></font><br>
+            <font size=6><b>आ</b></font><font size=5>प अब तक के सबसे लाभदायक बचत की अपनी यात्रा शुरू करने वाले हैं।</font><br>
+            <br><br>
+            <font size=3 style="color:white">For any support or query, Just tell us and sit patiently. We will come up with a better solution for you. We are there for you.</font><br>
+            <font size=2 style="color:white">किसी भी समर्थन या प्रश्न के लिए, बस हमें बताएं और धैर्य से बैठें। हम आपके लिए एक बेहतर समाधान लेकर आएंगे। हम आप के लिए हैं।</font><br><br>
+      </div>
+      <div class="divm">
+            <br><br><b><div class="sam3"><font size=6><span id="psa">Personal savings account opening form<span></font></b>
+            <input type="button" class="lang" name="hin" id="hinid" value="हिंदी" onclick="languagehin()">
+            <input type="button" class="lang" name="eng" id="engid" value="English" style="background-color:rgb(193,193,193)" onclick="languageeng()"></div>
+            <br><br>
+        <div class="sam2"><label for="fnid" id="fnl">Full Name</label>
+            <label name="birth" style="margin-left:47px" for="dbid" id="bdl">Birth Day</label></div>
+        <div class="sam2"><input type="text" id="fnid" class="fnh" onmouseover="fnov(this)" onmouseout="fnou(this)" name="fname" style="background-color:rgb(240,240,240)" placeholder="Name as in documents" required>
+            <input placeholder="22/01/1880" onfocus="(this.type='date')" onblur="(this.value==''?this.type='text':this.type='date')" name="bdate" class="bdw" id="bdid" onmouseover="fnov(this)" onmouseout="fnou(this)" style="background-color:rgb(240,240,240)" min="1920-01-01" max="2019-09-30" required></div>
+        <div class="sam2" name="phone"><label for="phid" id="pnl">Phone No.</label>
+            <label style="margin-left:47px" for="emid" name="email" id="eml">Email ID</label></div>
+        <div class="sam2"><input type="Number" name="pnum" id="phid" class="pnh" onmouseover="fnov(this)" onmouseout="fnou(this)" style="background-color:rgb(240,240,240)" placeholder="Whats app no. if possible, for better service" min=1000000000 max=9999999999 required>
+            <input type="text" name="email" class="emh" id="emid" style="background-color:rgb(240,240,240)" onmouseover="fnov(this)" onmouseout="fnou(this)" placeholder="xyz@gmail.com" required></div>
+        <div class="sam2"><label name="uidai" for="adid" id="adl">UIDAI</label>
+            <label style="margin-left:47px" name="pan" for="panid" id="panl">PAN No.</label></div>
+        <div class="sam2"><input type="Number" name="uidai" id="adid" class="adh"  style="background-color:rgb(240,240,240)" onmouseover="fnov(this)" onmouseout="fnou(this)" placeholder="Aadhar No.(12 digits)" min=1000000000 max=9999999999 required>
+            <input type="text" name="pan" class="panh" id="panid" style="background-color:rgb(240,240,240)" onmouseover="fnov(this)" onmouseout="fnou(this)" placeholder="Pan no.(if possible)" min=1000000000 max=9999999999 required></div>
+        <div style="height:40px"><label class="lbw" name="addr" for="addid" id="addl">Address</label></div>
+        <div style="display:grid"><textarea id="addid" onmouseover="fnov(this)" onmouseout="fnou(this)" name="add" rows="8" cols="107" style="background-color:rgb(240,240,240)" placeholder="Full address according to documents, including pin code"></textarea></div><br><br>
+        <input type="checkbox" name="update" id="updcid"><font size=3><span id="updid">Update me with the finest and cool ideas; including news, coupon and benifits.</span> <u id="updid2" onmouseover='style="cursor:pointer"'>Use information</u></font><br>
+        <input type="checkbox" name="agree" id="agrcid"><font size=3><span id="agrid">I agree with the terms and conditions of company.</span> <u id="agrid2" onmouseover='style="cursor:pointer"'>Legal information</u></font><br>
+          <div>
+            <center><div><br><br><input type="button" class="opnw" name="opn" id="opnid" value="Open Savings Account" onclick="checkval()"><br><br>
+          </div></center>
+      </div>
+    </div>
+      <div style="background-color:rgb(64,64,255)"><br>
+        <table>
+          <tr>
+            <td style="padding-left:65px">
+            <label style="color:white">We are here to help you!</label><br><br>
+            <span style="display:grid; grid-row-gap:2px"><input type="text" style="background-color:rgb(240,240,240)" id="sname" placeholder="Name" onmouseover="fnov(this)" onmouseout="fnou(this)">
+            <input type="text" id="semail" placeholder="Email" style="background-color:rgb(240,240,240)" onmouseover="fnov(this)" onmouseout="fnou(this)">
+            <input type="text" id="ssub" placeholder="Subject" style="background-color:rgb(240,240,240)" onmouseover="fnov(this)" onmouseout="fnou(this)">
+            <textarea placeholder="Message.." id="smes" style="background-color:rgb(240,240,240)" onmouseover="fnov(this)" onmouseout="fnou(this)"></textarea></span>
+            <input type="button" style="margin-left:50px; width:150px" class="sen" value="send" onclick="ffill()">
+            </td>
+            <td style="padding-left:65px">
+            <dl>
+              <dt style="color:white">About</dt>
+                <dd><input type="button" class="ser" value="Contact Us">
+                    <input type="button" class="ser" value="Global Community">
+                    <input type="button" class="ser" value="Short-Term Saving">
+                    <input type="button" class="ser" value="Long-Term Saving">
+                    <input type="button" class="ser" value="For Students">
+                </dd>
+            </dl>
+            <dl>
+              <dt style="color:white">Service</dt>
+                <dd><input type="button" class="ser" value="Financial Consultancy">
+                    <input type="button" class="ser" value="Funding">
+                    <input type="button" class="ser" value="Investment Management">
+                    <input type="button" class="ser" value="New user">
+                    <input type="button" class="ser" value="FAQs">
+                    <input type="button" class="ser" value="Advertise">
+                </dd>
+            </dl>
+            </td>
+            <td style="padding-left:65px">
+              <img src="zface3.png" class="imgb"><br>
+              <img src="ztwit3.png" class="imgb"><br>
+              <img src="zlinkin3.png" class="imgb">
+            </td>
+            <td style="padding-left:65px">
+              <input type="button" class="ser2" value="Copywrites"><br>
+              <input type="button" class="ser2" value="Employee Policy"><br>
+              <input type="button" class="ser2" value="User Policy"><br>
+              <input type="button" class="ser2" value="Ethics">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script language="javascript">
+    var vfn=fnl.innerHTML;
+    var vbd=bdl.innerHTML;
+    var vpn=pnl.innerHTML;
+    var vem=eml.innerHTML;
+    var vad=adl.innerHTML;
+    var vpan=panl.innerHTML;
+    var vadd=addl.innerHTML;
+    var num=0;
+
+      function opensup(){
+        window.open("samrat support.html");
+      }
+
+      function languageeng(){
+        num=0;
+        engid.style.backgroundColor="rgb(193,193,193)";
+        hinid.style.backgroundColor="white";
+        fnl.innerHTML="Full Name";
+        bdl.innerHTML="Birth Day";
+        pnl.innerHTML="Phone No.";
+        eml.innerHTML="Email ID";
+        adl.innerHTML="UIDAI";
+        panl.innerHTML="PAN No.";
+        addl.innerHTML="Address";
+        opnid.value="Open Savings Account";
+        fnid.placeholder="Name as in documents";
+        phid.placeholder="Whats app no. if possible, for better service";
+        adid.placeholder="Aadhar No.(12 digits)";
+        panid.placeholder="Pan no.(if possible)";
+        addid.placeholder="Full address according to documents, including pin code";
+        psa.innerHTML="Personal savings account opening form";
+        updid.innerHTML="Update me with the finest and cool ideas; including news, coupon and benifits.";
+        updid2.innerHTML=" Use information";
+        agrid.innerHTML="I agree with the terms and conditions of company.";
+        agrid2.innerHTML=" Legal information";
+      }
+
+      function languagehin(){
+        num=1;
+        engid.style.backgroundColor="white";
+        hinid.style.backgroundColor="rgb(193,193,193)";
+        fnl.innerHTML="पूरा नाम";
+        bdl.innerHTML="जन्म तिथि";
+        pnl.innerHTML="फ़ोन नंबर";
+        eml.innerHTML="ईमेल";
+        adl.innerHTML="आधार";
+        panl.innerHTML="पैन कार्ड नंबर";
+        addl.innerHTML="स्थाई पता";
+        opnid.value="बचत खाता खोलें";
+        fnid.placeholder="नाम, सरकारी दस्तावेजों में के अनुसार";
+        phid.placeholder="व्हाट्स ऐप नंबर अगर हो सके तो, बेहतर सेवा के लिए";
+        adid.placeholder="आधार संख्या(12 अंक)";
+        panid.placeholder="पैन नंबर(अगर संभव हो तो)";
+        addid.placeholder="दस्तावेजों के अनुसार पूरा पता, पिन कोड सहित";
+        psa.innerHTML="व्यक्तिगत बचत खाता खोलने का फॉर्म";
+        updid.innerHTML="मुझे बेहतरीन और शांत विचारों के साथ अपडेट करें; समाचार, कूपन और लाभ सहित।";
+        updid2.innerHTML=" जानकारी का उपयोग करें";
+        agrid.innerHTML="मैं कंपनी के नियमों और शर्तों से सहमत हूं।";
+        agrid2.innerHTML=" कानूनी जानकारी";
+      }
+
+      function fnov(cl){
+        cl.style.backgroundColor="rgb(255,200,200)";
+      }
+
+      function fnou(cl){
+      cl.style.backgroundColor="rgb(240,240,240)";
+    }
+
+    function checkval(){
+      var pdate=Date.parse(samrat.bdid.value);
+      var mindate=Date.parse("01 january 1920");
+      var maxdate=Date.parse("30 september 2019");
+
+      if(num==0){
+        if(fnid.value==""){
+            alert("Please fill Full Name");
+          }
+        else if(bdid.value==""){
+              alert("please fill Birth Date");
+        }
+        else if(phid.value==""){
+              alert("Please fill Phone no.");
+          }
+        else if(emid.value==""){
+              alert("Please fill Email ID");
+          }
+        else if(adid.value==""){
+              alert("Please fill UIDAI no.");
+          }
+        else if(panid.value==""){
+              alert("Please fill PAN no.");
+          }
+        else if(addid.value==""){
+              alert("Please fill Address");
+          }
+        else if(pdate<mindate){
+          alert("please enter date greater than 01/01/1920");
+        }
+        else if(pdate>maxdate){
+          alert("please enter date smaller than 30/09/2019");
+        }
+        else if(phid.value<1000000000||phid.value>9999999999){
+          alert("Please enter valid Phone no.");
+        }
+        else if(adid.value<100000000000||adid.value>999999999999){
+          alert("Please enter valid UIDAI no.");
+        }
+        else if(updcid.checked==false||agrcid.checked==false){
+          alert("Please mark the check boxes");
+        }
+        else{
+          alert("Your Savings Account Opened");
+          fnid.value="";
+          phid.value="";
+          emid.value="";
+          adid.value="";
+          panid.value="";
+          addid.value="";
+          bdid.type="text";
+          bdid.value="";
+          updcid.checked=false;
+          agrcid.checked=false;
+        }
+      }
+      else{
+        if(fnid.value==""){
+            alert("कृपया पूरा नाम भरें");
+          }
+        else if(bdid.value==""){
+              alert("कृपया जन्म तिथि भरें");
+        }
+        else if(phid.value==""){
+              alert("कृपया फोन नंबर भरेें");
+          }
+        else if(emid.value==""){
+              alert("कृपया ईमेल आईडी भरेें");
+          }
+        else if(adid.value==""){
+              alert("कृपया आधार नंबर भरेें");
+          }
+        else if(panid.value==""){
+              alert("कृपया पैन नंबर भरेें");
+          }
+        else if(addid.value==""){
+              alert("कृपया पता भरेें");
+          }
+        else if(pdate<mindate){
+          alert("कृपया दिनांक 01/01/1920 से अधिक दर्ज करें");
+        }
+        else if(pdate>maxdate){
+          alert("कृपया दिनांक 30/09/2019 से कम दर्ज करें");
+        }
+        else if(phid.value<1000000000||phid.value>9999999999){
+          alert("कृपया मान्य फ़ोन नंबर दर्ज करें");
+        }
+        else if(adid.value<100000000000||adid.value>999999999999){
+          alert("कृपया मान्य आधार संख्या दर्ज करें");
+        }
+        else if(updcid.checked==false||agrcid.checked==false){
+          alert("कृपया चेक बॉक्स चिह्नित करें");
+        }
+        else{
+          alert("आपका बचत खाता खुल गया");
+          fnid.value="";
+          phid.value="";
+          emid.value="";
+          adid.value="";
+          panid.value="";
+          addid.value="";
+          bdid.type="text";
+          bdid.value="";
+          updcid.checked=false;
+          agrcid.checked=false;
+        }
+      }
+    }
+    function ffill(){
+      if(sname.value==""||semail.value==""||ssub.value==""||smes.value==""){
+        alert("Please fill all the details");
+      }
+      else{
+        alert("Message sent");
+        sname.value="";
+        semail.value="";
+        ssub.value="";
+        smes.value="";
+      }
+    }
+    </script>
+    </form>
+  </body>
+</html>
+<html>
